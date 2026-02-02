@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E40AF" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+    <!-- Text Shadow -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="4" dy="4" stdDeviation="6" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+  
+  <!-- Main Background -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGradient)" />
+  
+  <!-- LX Text with Shadow -->
+  <text x="160" y="320" font-family="Arial, sans-serif" font-size="200" font-weight="bold" fill="white" filter="url(#shadow)">L</text>
+  <text x="280" y="320" font-family="Arial, sans-serif" font-size="200" font-weight="bold" fill="#FBBF24" filter="url(#shadow)">X</text>
+</svg>

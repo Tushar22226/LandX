@@ -1,0 +1,55 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": false,
+      "distribution": "internal",
+      "android": {
+        "image": "latest",
+        "env": {
+          "EXPO_ANDROID_COMPILE_SDK_VERSION": "34",
+          "EXPO_ANDROID_TARGET_SDK_VERSION": "34",
+          "EXPO_ANDROID_MIN_SDK_VERSION": "24"
+        }
+      }
+    },
+    "preview-android": {
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "env": {
+        "JAVA_HOME": "/usr/lib/jvm/java-17-openjdk-amd64",
+        "EXPO_ANDROID_COMPILE_SDK_VERSION": "34",
+        "EXPO_ANDROID_TARGET_SDK_VERSION": "34",
+        "EXPO_ANDROID_MIN_SDK_VERSION": "24"
+      }
+    },
+    "local-android": {
+      "android": {
+        "buildType": "apk"
+      },
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "JAVA_HOME": "/usr/lib/jvm/java-17-openjdk-amd64",
+        "EXPO_ANDROID_COMPILE_SDK_VERSION": "34",
+        "EXPO_ANDROID_TARGET_SDK_VERSION": "34",
+        "EXPO_ANDROID_MIN_SDK_VERSION": "24"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

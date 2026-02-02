@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "LandX",
+    "slug": "LandX",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "exp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jain-tushar-325.LandX"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "buildProperties": {
+        "compileSdkVersion": 34,
+        "targetSdkVersion": 34,
+        "minSdkVersion": 23
+      },
+      "package": "com.jain_tushar_325.LandX"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+   "plugins": [
+      "expo-router",
+      "expo-build-properties",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d51dcf3f-20e8-4a1f-8339-56254a28698d"
+      }
+    }
+  }
+}
